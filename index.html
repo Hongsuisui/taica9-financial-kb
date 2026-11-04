@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人財金知識庫 | Personal Financial Knowledge Base</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Noto Sans TC & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans TC', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f4f6f8',
+              100: '#e5e9f0',
+              500: '#3b82f6',
+              800: '#1e293b',
+              900: '#0f172a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#f8fafc] text-slate-800 font-sans leading-relaxed min-h-screen flex flex-col antialiased">
+
+  <!-- Header / Navigation -->
+  <header class="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="w-3 h-3 rounded-full bg-indigo-600 inline-block"></span>
+        <a href="index.html" class="font-bold text-lg tracking-wide text-slate-900">FINANCE<span class="text-indigo-600">.KNOWLEDGE</span></a>
+        <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded border border-slate-200 hidden sm:inline-block">TAICA #9 實作專案</span>
+      </div>
+      <nav class="flex items-center space-x-6 text-sm font-medium text-slate-600">
+        <a href="#dashboard" class="hover:text-indigo-600 transition">泰鼎儀表板</a>
+        <a href="#reports" class="hover:text-indigo-600 transition">每日報告</a>
+        <a href="#wiki" class="hover:text-indigo-600 transition">LLM Wiki</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8 space-y-10">
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white rounded-2xl p-6 sm:p-10 shadow-xl border border-slate-800">
+      <div class="max-w-3xl space-y-4">
+        <div class="inline-flex items-center space-x-2 bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 text-xs px-3 py-1 rounded-full font-mono">
+          <i class="fa-solid fa-robot"></i>
+          <span>大老闆自動化運作模式中</span>
+        </div>
+        <h1 class="text-2xl sm:text-4xl font-bold tracking-tight">個人財金知識庫 <span class="text-indigo-400 font-normal">Dashboard</span></h1>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          整合 <strong class="text-white">泰鼎-KY (4927)</strong> 個股營收追蹤、<strong class="text-white">游庭皓的財經皓角</strong> 每日總經觀點與 <strong class="text-white">股癌 Gooaye</strong> 市場操作心法。透過 LLM 自動化轉譯每日 Podcast 逐字稿與財經數據。
+        </p>
+      </div>
+    </section>
+
+    <!-- Dashboard Section: 泰鼎-KY (4927) 關鍵數據 -->
+    <section id="dashboard" class="space-y-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <i class="fa-solid fa-chart-line text-indigo-600 text-lg"></i>
+          <h2 class="text-xl font-bold text-slate-900">泰鼎-KY (4927) 關鍵數據與營收追蹤</h2>
+        </div>
+        <span class="text-xs text-slate-500">數據更新時間：2026-11</span>
+      </div>
+
+      <!-- Metric Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid
